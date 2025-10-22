@@ -1,0 +1,244 @@
+body{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQe2TdZPUExRN442EQRKkyA7rudjf9ba2-vQ&s");
+    width: 100%;
+    height: 98vh;
+    overflow-x: hidden;
+}
+.navbar{
+    display: flex;
+    width: 100%;
+    background: #6f77ac;
+    height: 40px;
+}
+.circle_button{
+    margin-top: 4.5px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #faf2f2;
+
+    font-weight: bolder;
+    font-size: 2vh;
+    margin-left: 8vw;
+
+    min-width:30px;
+
+}
+.s_b{
+    margin-top: 4.5px;
+    width: 8vw;
+    height: 30px;
+    background-color: #faf2f2;
+
+    font-weight: bolder;
+    font-size: 2vh;
+    margin-left: 0.1vw;
+    min-font-size: 20px;
+}
+.b_b{
+    margin-top: 4.5px;
+    width: 23vw;
+    height: 30px;
+    background-color: #faf2f2;
+
+    font-weight: bolder;
+    font-size: 2.5vh;
+    margin-left: 25vw;
+    border-radius: 12px;
+}
+.login_signup_buttons{
+    display: flex;
+    margin-top: 40px;
+    justify-content: space-between;
+}
+#create_new_account_button{
+    width: 12vw;
+    height: 30px;
+
+    font-weight: bolder;
+    font-size: 1vw;
+
+    margin-left: 8vw;
+    min-width: 100px;
+    min-font-size: 20px;
+    background-color: #faf2f2;
+
+}
+#login_button{
+    border-radius: 12px;
+    margin-right: 10vw;
+    width: 9vw;
+    background-color: #faf2f2;
+    font-weight: bolder;
+    font-size: 1vw;
+
+
+}
+.grid_container{
+    margin-top: 100px;
+    display:grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto;
+    gap: 10px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.post{
+    background: #6f77ac;
+    width: 85%;
+    margin-left: 15%;
+    height: auto;
+}
+.profile{
+    display: flex;
+    gap: 5px;
+}
+.profile > img{
+    width: 7vh;
+    height: 7vh;
+    border-radius: 50%;
+    margin-top: 5px;
+    margin-left: 5px;
+
+}
+.profile > p{
+    font-weight: bolder;
+    color: #0b0b0b;
+    font-size: 2.5vh;
+    margin-top: 22px;
+}
+.description{
+    color: #0b0b0b;
+    margin-left: 10px;
+}
+.description > p{
+    font-size: 2.4vh;
+}
+.conversation{
+    background: #dad7d7;
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 2;
+    margin-left: 15%;
+    height: auto;
+    width: auto;
+
+}
+.row{
+    display: flex;
+}
+.rect{
+    background-color: #75a34a;
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 85%;
+    justify-content: right;
+    text-align: right;
+}
+.rect > p{
+    font-size:larger;
+    margin-right: 5px;
+}
+.circle > img{
+    width: 8vh;
+    height: 8vh;
+    border-radius: 50%;
+    margin-top: 20px;
+    margin-left: 5px;
+}
+.row2{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.rect2{
+    background-color: #75a34a;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 20px;
+    width: 85%;
+    justify-content: right;
+    text-align:left;
+}
+.rect2 > p{
+    font-size:larger;
+    margin-left: 5px;
+}
+.circle2 > img{
+    width: 8vh;
+    height: 8vh;
+    border-radius: 50%;
+    margin-top: 20px;
+    margin-left: 5px;
+}
+#sendMessage_button{
+    border-radius: 10px;
+    width: 13vw;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: bolder;
+    font-size: 1.2vw;
+    margin-left: 27vw;
+}
+.Filter_bar{
+    display: flex;
+    flex-direction: column;
+    background: #6f77ac;
+    grid-column: 2 / span 2;
+    grid-row: 1 / span 2;
+    margin-right: 10vw;
+    margin-left: 20vw;
+    text-align:center;
+    height: auto;
+    width: auto;
+    justify-content: space-around;
+}
+.row_of_checkbox{
+    gap: 20px;
+}
+#Filter_by{
+    width: 65%;
+    margin-left: 20%;
+    border-radius: 10px;
+    background-color: #faf2f2;
+    font-weight: bolder;
+    font-size: 2vh;
+}
+.row_of_checkbox > label{
+font-size: 3vh;
+}
+
+@media only screen and (max-width: 800px) {
+    .grid_container{
+        margin-top: 100px;
+        display:flex;
+        grid-template-columns:auto;
+        grid-template-rows: auto ;
+        gap: 10px;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .post{
+        background: #6f77ac;
+        width: 70%;
+        margin-left: 15%;
+        height: auto;
+    }
+    .conversation{
+        background: #dad7d7;
+        grid-column: 1 / span 1;
+        grid-row: 2 / span 2;
+        margin-left: 15%;
+        height: auto;
+        width: 70%;
+    }
+    .Filter_bar{
+        display: flex;
+        flex-direction: column;
+        background: #6f77ac;
+        text-align:center;
+        height: auto;
+        width: 57%;
+        justify-content: space-around;
+    }
+
+}

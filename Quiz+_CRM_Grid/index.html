@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>CRM by Jubran</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-----------------------------------------------------Nav bar--------------------------------------------------------->
+<div class="navbar">
+    <button class="circle_button"> 8 </button>
+    <button class="s_b"> A</button>
+    <button class="s_b"> B</button>
+    <button class="s_b"> C</button>
+    <button class="s_b"> D</button>
+    <button class="b_b"> Home</button>
+</div>
+<!-----------------------------------------------------Login Sing-up buttons------------------------------------------->
+<div class="login_signup_buttons">
+    <div class="signup_button">
+        <button id="create_new_account_button">Create new account</button>
+    </div>
+
+    <div class="login_button">
+        <button id="login_button"> Login</button>
+    </div>
+</div>
+<!-----------------------------------------------------Grid container-------------------------------------------------->
+<div class="grid_container">
+    <!---------------------------Post--------------------------->
+    <div class="post">
+        <div class="profile">
+            <img src="manProfile.png">
+            <p> Jubran Khoury</p>
+        </div>
+        <div class="description">
+            <p> Hello... <br> My name is Jubran <br>
+                I'am a Forth-year computer system engineer studying at Birzeit University.
+            </p>
+        </div>
+    </div>
+    <!-----------------------Conversation---------------------->
+    <div class="conversation">
+        <!-------------row1------------------>
+        <div class="row">
+            <div class="rect">
+                <p>Good morning!</p>
+            </div>
+
+            <div class="circle">
+                <img src="manProfile.png">
+            </div>
+        </div>
+        <!-------------row2------------------>
+        <div class="row2">
+            <div class="rect2">
+                <p>Morning!</p>
+            </div>
+
+            <div class="circle2">
+                <img src="womenProfile.png">
+            </div>
+        </div>
+        <!-------------row3------------------>
+        <div class="row">
+            <div class="rect">
+                <p>How are you!</p>
+            </div>
+
+            <div class="circle">
+                <img src="manProfile.png">
+            </div>
+        </div>
+ -       <!--------send message button-------->
+        <button id="sendMessage_button"> Send message</button>
+
+    </div>
+    <!------------------------Filter bar------------------------------->
+    <div class="Filter_bar">
+        <!----------------Active----------------->
+        <div class="row_of_checkbox">
+            <input type="checkbox" id="checkbox1">
+            <label for="checkbox1">Active </label>
+        </div>
+        <!-------------Close friends------------->
+        <div class="row_of_checkbox">
+            <input type="checkbox" id="checkbox2">
+            <label for="checkbox2">Close friends</label>
+        </div>
+        <!--------------Followers---------------->
+        <div class="row_of_checkbox">
+            <input type="checkbox" id="checkbox3">
+            <label for="checkbox3">Followers</label>
+        </div>
+        <!--------------Following---------------->
+        <div class="row_of_checkbox">
+            <input type="checkbox" id="checkbox4">
+            <label for="checkbox4">Following</label>
+        </div>
+        <!-------------Filter button------------->
+        <button id="Filter_by"> Filter by</button>
+    </div>
+
+</div>
+
+</div>
+</body>
+</html>
