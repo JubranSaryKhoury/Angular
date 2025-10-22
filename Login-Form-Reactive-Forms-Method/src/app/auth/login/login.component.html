@@ -1,0 +1,33 @@
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+  <!-- Here we bind the '[formGroup]' with property binding with the form -->
+  <h2>Login</h2>
+
+  <div class="control-row">
+    <div class="control no-margin">
+      <label for="email">Email</label>
+      <input id="email" type="email" [formControl]="form.controls.email" />
+      <!-- due to  [formControl]="form.controls.email" now this will be linked to [email: new FormControl('')] -->
+    </div>
+
+    <div class="control no-margin">
+      <label for="password">Password</label>
+      <input id="password" type="password" formControlName="password" />
+      <!-- same thing... this will be linked to the password controller [password: new FormControl('')] -->
+      <!-- note that formControlName="password" === [formControl]="form.controls.password"  -->
+    </div>
+
+    <button class="button">Login</button>
+  </div>
+  @if(emailIsInvalid){
+  <!-- 'emailIsInvalid' is a method in the typescript file -->
+  <p class="control-error">Please enter a valid email address.</p>
+  } @if(passwordIsInvalid){
+  <!-- 'passwordIsInvalid' is a method in the typescript file -->
+  <p class="control-error">
+    Please enter a valid password (must at least 6 characters long and contain a
+    question mark '?').
+  </p>
+  }
+</form>
+
+<!-- In this method we dont act on the html file -->
