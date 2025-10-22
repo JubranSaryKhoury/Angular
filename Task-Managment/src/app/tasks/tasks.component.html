@@ -1,0 +1,22 @@
+@if(isAddingTask){
+<app-new-task [userId]="userId" (close)="onCloseAddTask()" />
+}
+
+<section id="tasks">
+  <header>
+    <h2>{{ name }}'s Tasks</h2>
+    <menu>
+      <button (click)="onStartAddTask()">Add Task</button>
+    </menu>
+  </header>
+  <ul>
+    @for(task of selectedUserTasks; track task.id){
+    <li>
+      <app-task [task]="task" />
+      <!--(complete)="onCompleteTask($event)" this were removed because we dont need to listen to any event-->
+      <!--now this task will do its job on its own ... with help of this service-->
+      <!--Now when you press complete button the button will works as before (before => before using the services)-->
+    </li>
+    }
+  </ul>
+</section>
